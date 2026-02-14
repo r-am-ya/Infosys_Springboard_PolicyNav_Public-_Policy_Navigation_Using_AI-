@@ -45,6 +45,30 @@ This milestone ensures proper authentication, security validation, and deploymen
 
 ### 3️⃣ Start ngrok Tunnel
 
+## Screenshots of the output
 
-```bash
-pip install streamlit bcrypt pyjwt
+### Signup page:
+
+<img width="1919" height="951" alt="image" src="https://github.com/user-attachments/assets/a59b73a0-73cb-4d9a-b1fd-811c53c15dcd" />
+
+### Login Page:
+
+<img width="1040" height="608" alt="image" src="https://github.com/user-attachments/assets/e734a6a4-b5ce-46d9-83d4-9fbcddea4383" />
+
+
+<img width="706" height="698" alt="image" src="https://github.com/user-attachments/assets/e7854bc3-70be-4522-8508-95d46b4c485e" />
+
+### Dashboard:
+
+<img width="1711" height="783" alt="image" src="https://github.com/user-attachments/assets/2fdd98e9-2a01-4771-92b1-4d3247a5ac7e" />
+
+### Forgot Password Page:
+
+<img width="604" height="913" alt="image" src="https://github.com/user-attachments/assets/4132206d-d9d1-4a74-8dba-2aff0e9c55d9" />
+
+
+###👩‍💻 Author
+
+Ramya K
+
+Infosys Springboard Internship Program
