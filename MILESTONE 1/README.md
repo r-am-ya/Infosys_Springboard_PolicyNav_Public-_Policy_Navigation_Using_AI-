@@ -5,31 +5,35 @@
 
 ## 📖 Project Description
 
-Milestone 1 focuses on building the core authentication system for the PolicyNav application. The objective of this milestone was to implement a secure and functional user management system that allows users to register, log in, recover passwords, and access a dashboard.
+Milestone 1 focuses on developing the secure authentication module of the PolicyNav system. The application enables users to register, log in, recover passwords, and access a protected dashboard.
 
-The following functionalities were successfully implemented:
+This milestone ensures proper authentication, security validation, and deployment testing before integrating AI-based policy navigation features.
+
+---
+
+## ✅ Features Implemented
 
 - User Registration (Signup Page)
 - Secure Login System
 - Password Hashing using bcrypt
 - JWT-based Authentication
-- Forgot Password functionality with Security Question validation
+- Forgot Password with Security Question Validation
 - Input Validation (No spaces allowed in passwords and security answers)
-- SQLite database integration for storing user credentials
-- Basic User Dashboard after successful login
-
-This milestone ensures that the application follows proper authentication and security practices before moving into advanced AI-based policy navigation features.
+- SQLite Database Integration
+- User Dashboard
+- Public Access using ngrok tunnel
 
 ---
 
-## ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Streamlit
 - SQLite
-- bcrypt (Password Hashing)
+- bcrypt
 - JWT (JSON Web Tokens)
-- Regular Expressions (Input Validation)
+- Regular Expressions
+- ngrok (for secure public URL tunneling)
 
 ---
 
@@ -37,14 +41,10 @@ This milestone ensures that the application follows proper authentication and se
 
 ### 1️⃣ Install Required Libraries
 
-### 2️⃣ Run the Application
+### 2️⃣ Run Streamlit Application
 
-### 3️⃣ Open the ngrok link in Browser
-
-### 👩‍💻 Author
-
-Ramya K
-B.Tech Student
-Infosys Springboard Internship Program
+### 3️⃣ Start ngrok Tunnel
 
 
+```bash
+pip install streamlit bcrypt pyjwt
