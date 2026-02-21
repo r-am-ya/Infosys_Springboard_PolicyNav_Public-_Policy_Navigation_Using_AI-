@@ -49,22 +49,21 @@ This milestone ensures proper authentication, security validation, and deploymen
 
 ### Signup page:
 
-<img width="1919" height="951" alt="image" src="https://github.com/user-attachments/assets/a59b73a0-73cb-4d9a-b1fd-811c53c15dcd" />
+<img width="1915" height="889" alt="image" src="https://github.com/user-attachments/assets/9ef68300-9ba4-4345-b570-3338125e1ca5" />
+
 
 ### Login Page:
 
-<img width="1040" height="608" alt="image" src="https://github.com/user-attachments/assets/e734a6a4-b5ce-46d9-83d4-9fbcddea4383" />
+<img width="1908" height="802" alt="image" src="https://github.com/user-attachments/assets/6dfe5a9a-4225-4ce8-8cb6-91e15ff011b5" />
 
-
-<img width="706" height="698" alt="image" src="https://github.com/user-attachments/assets/e7854bc3-70be-4522-8508-95d46b4c485e" />
 
 ### Dashboard:
 
-<img width="1711" height="783" alt="image" src="https://github.com/user-attachments/assets/2fdd98e9-2a01-4771-92b1-4d3247a5ac7e" />
+<img width="1914" height="820" alt="image" src="https://github.com/user-attachments/assets/1118b985-5348-42a7-bb80-51cf3219e506" />
 
 ### Forgot Password Page:
 
-<img width="604" height="913" alt="image" src="https://github.com/user-attachments/assets/4132206d-d9d1-4a74-8dba-2aff0e9c55d9" />
+<img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/417ba9cf-918b-4ba4-8f87-fde20610609c" />
 
 
 ## 👩‍💻Author
