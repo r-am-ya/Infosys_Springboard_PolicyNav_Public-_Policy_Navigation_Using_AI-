@@ -1,8 +1,8 @@
-##🔐 PolicyNav – Milestone 2##
+## 🔐 PolicyNav – Milestone 2
 
-Secure Authentication System with OTP & JWT
+### Secure Authentication System with OTP & JWT
 
-📌 Project Overview
+### 📌 Project Overview
 
 This project is part of the Infosys Virtual Internship.
 Milestone 2 focuses on enhancing the authentication system by implementing:
@@ -21,7 +21,7 @@ Milestone 2 focuses on enhancing the authentication system by implementing:
 
 The system is built using Streamlit, SQLite, and Python security libraries.
 
-🚀 Features Implemented in Milestone 2
+### 🚀 Features Implemented in Milestone 2
 
 🔑 Authentication Features
 
@@ -65,7 +65,7 @@ Security:
 
     Deployment: ngrok (for public access)
 
-⚙️ How to Run the Application
+### ⚙️ How to Run the Application
 
 1️⃣ Clone the Repository
 
@@ -75,7 +75,7 @@ Security:
 
 4️⃣ (Optional) Run with ngrok for Public URL
 
-📸 Screens Included
+### 📸 Screenshots Included
 
 Milestone 2 includes the following UI pages:
 
@@ -108,7 +108,7 @@ Milestone 2 includes the following UI pages:
 
 <img width="1919" height="855" alt="image" src="https://github.com/user-attachments/assets/afdc683b-0924-455d-9e9d-cd85535ee26e" />
 
-🔐 Security Improvements Compared to Milestone 1
+### 🔐 Security Improvements Compared to Milestone 1
 
 | Feature            | Milestone 1 | Milestone 2   |
 | ------------------ | ----------- | ------------- |
@@ -119,7 +119,7 @@ Milestone 2 includes the following UI pages:
 | Deployment         | Local       | ngrok Enabled |
 
 
-🎯 Learning Outcomes
+### 🎯 Learning Outcomes
 
 - Implemented secure authentication mechanisms
 
@@ -131,9 +131,9 @@ Milestone 2 includes the following UI pages:
 
 - Practiced deploying Streamlit apps using ngrok
 
-##👩‍💻 Author##
+## 👩‍💻 Author
 
-###K Ramya
+### K Ramya
 
-###Infosys Virtual Internship
+### Infosys Virtual Internship
 
