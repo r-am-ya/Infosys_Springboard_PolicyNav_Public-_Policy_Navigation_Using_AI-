@@ -1,4 +1,4 @@
-PolicyNav – AI Powered Policy Navigation System (Milestone 3)
+## PolicyNav – AI Powered Policy Navigation System (Milestone 3)
 Project Title
 
 PolicyNav: AI-Powered Policy Understanding and Navigation System
