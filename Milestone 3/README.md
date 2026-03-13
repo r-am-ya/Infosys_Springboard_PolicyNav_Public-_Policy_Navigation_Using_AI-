@@ -1,9 +1,9 @@
 # PolicyNav – AI Powered Policy Navigation System (Milestone 3)
-Project Title
+## Project Title
 
 PolicyNav: AI-Powered Policy Understanding and Navigation System
 
-Description
+### Description
 
 PolicyNav is an AI-powered platform designed to help users easily search, understand, and analyze government policies and documents.
 
@@ -122,49 +122,25 @@ The extracted text is cleaned and stored for AI-based search.
 
 ### Technologies Used
 
-Programming Language
+Programming Language: Python
 
-Python
+Frontend: Streamlit
 
-Frontend
+Machine Learning / AI: Transformers
 
-Streamlit
+Sentence Transformers: FAISS Vector Database
 
-Machine Learning / AI
+NLP Tools: HuggingFace Transformers
 
-Transformers
+TextStat: BeautifulSoup
 
-Sentence Transformers
+Backend: SQLite Database
 
-FAISS Vector Database
+JWT Authentication, Bcrypt Password Hashing
 
-NLP Tools
+Visualization: Plotly, Knowledge Graph
 
-HuggingFace Transformers
-
-TextStat
-
-BeautifulSoup
-
-Backend
-
-SQLite Database
-
-JWT Authentication
-
-Bcrypt Password Hashing
-
-Visualization
-
-Plotly
-
-Knowledge Graph
-
-Deployment Tools
-
-Google Colab
-
-Ngrok
+Deployment Tools: Google Colab, Ngrok
 
 
 ### Steps to Run the Application
