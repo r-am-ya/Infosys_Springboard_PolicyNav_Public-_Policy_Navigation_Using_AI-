@@ -87,7 +87,8 @@ Monolithic AI system integrating NLP pipelines, vector search, and visualization
 ## 🧩 Architecture Diagram
 
 <p align="center">
-  <img src="images/architecture.png" width="900"/>
+  <img width="828" height="311" alt="image" src="https://github.com/user-attachments/assets/d07d5485-b309-4d0f-ae7c-fdea0b7327cb" />
+
   <br/>
   <em>Figure: End-to-end system architecture of PolicyNav</em>
 </p>
