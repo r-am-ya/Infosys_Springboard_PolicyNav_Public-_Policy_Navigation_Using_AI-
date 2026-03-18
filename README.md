@@ -40,18 +40,18 @@ It enables users to:
 
 
 
-## 🎯 Problem Statement & Motivation
 
-Policy documents are:
-- Lengthy and difficult to navigate  
-- Written in complex language  
-- Time-consuming to analyze manually  
+## 📄 Problem & Solution
 
-🔹 Our solution uses AI to:
+**Problem:**  
+Policy documents are often lengthy and difficult to navigate, written in complex language, and time-consuming to analyze manually.
+
+**Solution:**  
+Our AI-powered system helps to:
 - Extract meaningful insights instantly  
 - Enable semantic search across documents  
 - Visualize relationships between entities  
-- Simplify and summarize complex content  
+- Simplify and summarize complex content
 
 
 
