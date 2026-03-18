@@ -263,32 +263,38 @@ EMAIL_APP_PASSWORD=your_app_password
 ## 📸 Screenshots
 
 ### 📊 Dashboard
-![Dashboard](images/dashboard.png)
+![Dashboard]<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/a1fec8c0-5bf8-45b7-b537-59be84ee7ee3" />
 
 
 
 ### 🔎 RAG Search
-![RAG Search](images/rag_search.png)
+![RAG Search]<img width="1919" height="873" alt="image" src="https://github.com/user-attachments/assets/4606eced-43c4-4f9b-b299-1a443ad2333f" />
+
 
 
 
 ### 🌐 Knowledge Graph
-![Knowledge Graph](images/knowledge_graph.png)
+![Knowledge Graph]<img width="1919" height="884" alt="image" src="https://github.com/user-attachments/assets/b88a5e19-4edf-4e70-8584-6395c7656779" />
+
 
 
 
 ### 🕘 History
-![History](images/history.png)
+![History]<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/fdebb628-4fff-4c92-9b5d-9606af59d019" />
+
+
 
 
 
 ### 🛠 Admin Panel
-![Admin](images/admin.png)
+![Admin]<img width="1919" height="845" alt="image" src="https://github.com/user-attachments/assets/10d78c4b-91f4-4774-b372-acc5ab37b5ca" />
+
 
 
 
 ### 🧠 Summarization
-![Summarization](images/summarization.png)
+![Summarization]<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/93f3f01c-784b-4c72-b755-12384cb22dcb" />
+
 
 
 ## 🛣 Roadmap
