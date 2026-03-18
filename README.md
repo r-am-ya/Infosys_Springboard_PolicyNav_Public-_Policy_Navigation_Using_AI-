@@ -57,18 +57,15 @@ Policy documents are:
 
 ## 🚀 Key Features
 
-### 👤 User Features
+## 👤 User Features
 
-| Feature | Description |
-|--||
-| 🔐 Secure Authentication | JWT-based login & registration |
-| 🔎 RAG Search | AI-powered semantic search using FAISS |
-| 📊 Readability Analyzer | Flesch, Gunning Fog, SMOG metrics |
-| 🧠 Document Summarization | Transformer-based summarization |
-| 🌐 Knowledge Graph | Entity relationship visualization |
-| 🕘 Query History | Track previous searches & outputs |
-| 📈 Dashboard | Interactive analytics & insights |
-
+- 🔐 **Secure Authentication** – JWT-based login & registration  
+- 🔎 **RAG Search** – AI-powered semantic search using FAISS  
+- 📊 **Readability Analyzer** – Flesch, Gunning Fog, and SMOG metrics  
+- 🧠 **Document Summarization** – Transformer-based summarization  
+- 🌐 **Knowledge Graph** – Entity relationship visualization  
+- 🕘 **Query History** – Track previous searches & outputs  
+- 📈 **Dashboard** – Interactive analytics & insights  
 
 
 ### 🛠 Admin-only Features
@@ -77,10 +74,9 @@ Policy documents are:
 - Upload and manage policy documents  
 - Monitor system usage  
 - View user activity and search logs  
-- Manage document indexing and vector store  
+- Manage document indexing and vector store
 
-
-
+  
 ## 🧩 Architecture
 
 Monolithic AI system integrating NLP pipelines, vector search, and visualization tools.
