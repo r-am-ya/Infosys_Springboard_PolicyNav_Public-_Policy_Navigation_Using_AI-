@@ -301,7 +301,7 @@ EMAIL_APP_PASSWORD=your_app_password
 
 
 ## Mentor
-Mohammad Sipli M
+Mohammadisipli M
 ## 👥 Team
 
 | Name | Role | Responsibilities |
