@@ -1,8 +1,14 @@
-# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI- Velagada Devi Sri Prasad
+# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI
 # 🧠 PolicyNav
 AI-Powered Policy Document Analysis & Navigation System  
 Transforming complex policy documents into actionable insights using AI.
+##Quick Links
 
+| Category          | Link                                 |
+| ----------------- | ------------------------------------ |
+| 📽️ Demo Video    | [Video Link](https://drive.google.com/file/d/1o0quoQmjCtUTDYM1k-SvOcfN0cxqjVTP/view?usp=sharing)                         |
+| 🧩 Source Code    | This Repository                      |
+| 🧠 AI Models      | Qwen · Sentence Transformers · FAISS |
 
 ## 📌 Table of Contents
 
@@ -36,10 +42,11 @@ It enables users to:
 - Analyze readability of content  
 
 📌 Built as part of **Infosys Springboard Internship Final Project**  
-📌 Target users: Researchers, policy analysts, students, government professionals  
+📌 Target users: Common persons, Researchers, policy analysts, students, government professionals  
 
 
 
+## 🎯 Problem Statement & Motivation
 
 ## 📄 Problem & Solution
 
@@ -74,17 +81,17 @@ Our AI-powered system helps to:
 - Upload and manage policy documents  
 - Monitor system usage  
 - View user activity and search logs  
-- Manage document indexing and vector store
+- Manage document indexing and vector store  
 
-  
+
+
 ## 🧩 Architecture
 
 Monolithic AI system integrating NLP pipelines, vector search, and visualization tools.
 ## 🧩 Architecture Diagram
 
 <p align="center">
-  <img width="828" height="311" alt="image" src="https://github.com/user-attachments/assets/d07d5485-b309-4d0f-ae7c-fdea0b7327cb" />
-
+  <img src="images/architecture.png" width="900"/>
   <br/>
   <em>Figure: End-to-end system architecture of PolicyNav</em>
 </p>
@@ -103,17 +110,14 @@ Monolithic AI system integrating NLP pipelines, vector search, and visualization
 
 ## 🛠 Tech Stack
 
-| Layer | Technology |
-||--|
-| Frontend | Streamlit |
-| Backend | Python |
-| NLP Models | Hugging Face Transformers |
-| Vector Search | FAISS |
-| Database | SQLite |
-| Security | JWT, bcrypt |
-| Visualization | Plotly, PyVis |
-| NLP | spaCy |
-
+- 🎨 **Frontend:** Streamlit  
+- ⚙️ **Backend:** Python  
+- 🤖 **NLP Models:** Hugging Face Transformers  
+- 🔍 **Vector Search:** FAISS  
+- 🗄️ **Database:** SQLite  
+- 🔐 **Security:** JWT, bcrypt  
+- 📊 **Visualization:** Plotly, PyVis  
+- 🧠 **NLP:** spaCy  
 
 
 ## 🤖 Models Used
@@ -226,16 +230,38 @@ EMAIL_APP_PASSWORD=your_app_password
 
 ## 📝 Usage Guide
 
-1️⃣ **Register/Login**  
-2️⃣ **Upload or select policy documents**  
-3️⃣ **Perform semantic search queries**  
-4️⃣ **View AI-generated answers**  
-5️⃣ **Explore knowledge graph**  
-6️⃣ **Generate summaries**  
-7️⃣ **Analyze readability**  
-8️⃣ **View history and dashboard insights**  
+## 📝 Usage Guide
 
-📌 *Screenshots included below 👇*
+1️⃣ **Register / Login** — Create an account with email, username, and a strong password (min. 8 chars, uppercase + number required)
+
+2️⃣ **Select a Feature** from the sidebar — RAG Search, Summarization, Knowledge Graph, Readability Analyzer, or History
+
+3️⃣ **RAG Search** — Type your policy question in any supported language. Choose output language and optionally enable **Simplify Jargon** mode. The AI searches the vector DB and translates the answer back.
+
+4️⃣ **Summarizer** — Upload a policy PDF or paste text, select output language, and get a 3-bullet summary. Use the Q&A box to ask follow-up questions from the same document.
+
+5️⃣ **Knowledge Graph** — Click **Render Interactive Topology** to generate a live force-directed entity graph from all ingested documents. Hover nodes for details.
+
+6️⃣ **Readability Analyzer** — Enter text or upload a PDF/TXT. View 5 readability gauges, grade level classification (Beginner / Intermediate / Advanced / Expert), and detailed text statistics.
+
+7️⃣ **Profile** — Manage your avatar, change email (OTP-verified), update password (with history check), and configure app settings.
+
+8️⃣ **Feedback** — Submit a 5-star rating and optional comment after using any feature. 
+
+## 🌐 Multilingual Support
+
+PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-quality, bi-directional translation. Your question is first translated to English for FAISS search, then the AI answer is translated back to your chosen language.
+
+| **Language** | **NLLB-200 Code** |
+|---|---|
+| English | `eng_Latn` |
+| Hindi | `hin_Deva` |
+| Tamil | `tam_Taml` |
+| Telugu | `tel_Telu` |
+| Kannada | `kan_Knda` |
+| Marathi | `mar_Deva` |
+| Bengali | `ben_Beng` |
+
 
 
 ## 📊 Datasets & Evaluation
@@ -256,48 +282,37 @@ EMAIL_APP_PASSWORD=your_app_password
 - Readability score improvements  
 - Knowledge graph completeness  
 
+📌 *Screenshots included below 👇*
 
 ## 📸 Screenshots
 
 ### 📊 Dashboard
-
-<img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/a1fec8c0-5bf8-45b7-b537-59be84ee7ee3" />
+![Dashboard](images/dashboard.png)
 
 
 
 ### 🔎 RAG Search
-
-<img width="1919" height="873" alt="image" src="https://github.com/user-attachments/assets/4606eced-43c4-4f9b-b299-1a443ad2333f" />
-
+![RAG Search](images/rag_search.png)
 
 
 
 ### 🌐 Knowledge Graph
-
-<img width="1919" height="884" alt="image" src="https://github.com/user-attachments/assets/b88a5e19-4edf-4e70-8584-6395c7656779" />
-
+![Knowledge Graph](images/knowledge_graph.png)
 
 
 
 ### 🕘 History
-
-<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/fdebb628-4fff-4c92-9b5d-9606af59d019" />
-
-
+![History](images/history.png)
 
 
 
 ### 🛠 Admin Panel
-
-<img width="1919" height="845" alt="image" src="https://github.com/user-attachments/assets/10d78c4b-91f4-4774-b372-acc5ab37b5ca" />
-
+![Admin](images/admin.png)
 
 
 
 ### 🧠 Summarization
-
-<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/93f3f01c-784b-4c72-b755-12384cb22dcb" />
-
+![Summarization](images/summarization.png)
 
 
 ## 🛣 Roadmap
@@ -310,7 +325,7 @@ EMAIL_APP_PASSWORD=your_app_password
 
 
 ## Mentor
-Mohammadisipli M
+Mohammad Sipli M
 ## 👥 Team
 
 | Name | Role | Responsibilities |
