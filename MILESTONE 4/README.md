@@ -1,222 +1,245 @@
-# 🧭 PolicyNav
+# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI- Velagada Devi Sri Prasad
+# 🧠 PolicyNav
+AI-Powered Policy Document Analysis & Navigation System  
+Transforming complex policy documents into actionable insights using AI.
+##Quick Links
 
-### **AI-Powered Public Policy Navigation, Search & Intelligence Platform**
-
-> *Navigating complex policies — made simple, accessible, and multilingual.*
-
----
-
-## 🔗 Quick Links
-
-| **Category** | **Details** |
-|---|---|
-| 📽️ Demo | Google Colab + ngrok (live tunnel) |
-| 🧩 Source Code | This Repository |
-| ☁️ Platform | Google Colab + Google Drive |
-| 🧠 AI Models | Qwen2.5-1.5B-Instruct · NLLB-200 · spaCy · sentence-transformers · FAISS |
-| 🔐 Auth | JWT · bcrypt · OTP Email · Security Questions |
-
----
+| Category          | Link                                 |
+| ----------------- | ------------------------------------ |
+| 📽️ Demo Video    | [Video Link](https://drive.google.com/file/d/1o0quoQmjCtUTDYM1k-SvOcfN0cxqjVTP/view?usp=sharing)                         |
+| 🧩 Source Code    | This Repository                      |
+| 🧠 AI Models      | Qwen · Sentence Transformers · FAISS |
 
 ## 📌 Table of Contents
 
-1. [About the Project](#-about-the-project)
-2. [Problem Statement & Motivation](#-problem-statement--motivation)
-3. [Key Features](#-key-features)
-4. [Architecture Overview](#-architecture-overview)
-5. [Tech Stack](#️-tech-stack)
-6. [AI Models Used](#-ai-models-used)
-7. [Project Structure](#-project-structure)
-8. [Installation & Setup](#️-installation--setup)
-9. [Usage Guide](#-usage-guide)
-10. [Admin Dashboard](#️-admin-dashboard)
-11. [Multilingual Support](#-multilingual-support)
-12. [Screenshots](#-screenshots)
-13. [Roadmap](#️-roadmap)
-14. [Team](#-team)
-15. [License](#-license)
+- About the Project  
+- Problem Statement & Motivation  
+- Key Features  
+- Architecture  
+- Tech Stack  
+- Models Used  
+- Project Structure  
+- Installation & Setup  
+- Usage Guide  
+- Admin Controls  
+- Datasets & Evaluation  
+- Screenshots  
+- Roadmap  
+- Team  
+- License  
 
----
+
 
 ## 📖 About the Project
 
-**PolicyNav** is a full-stack, AI-powered platform that makes public policy documents accessible to everyone — regardless of language, background, or expertise.
+**PolicyNav** is an AI-powered system designed to simplify the exploration and understanding of complex policy documents using modern NLP techniques and Retrieval-Augmented Generation (RAG).
 
-Built as part of the **Infosys Springboard Internship — PolicyNav Specialization Module**, this platform combines RAG-based question answering, multilingual translation, document summarization, entity extraction via knowledge graphs, and readability analytics into a single, production-grade Streamlit application.
+It enables users to:
+- Search across large document collections intelligently  
+- Generate contextual answers using AI  
+- Visualize relationships via knowledge graphs  
+- Summarize lengthy documents  
+- Analyze readability of content  
 
-📌 **Target Users:** Citizens, policy analysts, governance professionals, legal researchers, journalists, and students.
+📌 Built as part of **Infosys Springboard Internship Final Project**  
+📌 Target users: Common persons, Researchers, policy analysts, students, government professionals  
 
----
+
 
 ## 🎯 Problem Statement & Motivation
 
-Public policy documents are long, jargon-heavy, and often available only in English. Millions of citizens across India and the world are unable to understand the policies that directly affect their lives.
+## 📄 Problem & Solution
 
-**PolicyNav solves this by:**
+**Problem:**  
+Policy documents are often lengthy and difficult to navigate, written in complex language, and time-consuming to analyze manually.
 
-- 🔍 Enabling natural-language search directly over policy PDFs using FAISS vector search
-- 🌐 Translating questions and answers across 7+ Indian languages via NLLB-200
-- 📝 Summarizing large documents into 3 concise bullet points instantly
-- 🕸️ Mapping entities and relationships via an interactive knowledge graph
-- 📊 Scoring readability with 5 industry-standard metrics and visual gauges
-- 🔐 Securing access with JWT auth, OTP email verification, and account lockout
+**Solution:**  
+Our AI-powered system helps to:
+- Extract meaningful insights instantly  
+- Enable semantic search across documents  
+- Visualize relationships between entities  
+- Simplify and summarize complex content
 
----
+
 
 ## 🚀 Key Features
 
-### 👤 User Features
+## 👤 User Features
 
-| **Feature** | **Description** |
-|---|---|
-| 🔐 JWT Authentication | Secure login, registration, OTP-based password recovery, account lockout after 3 failed attempts |
-| 🔍 RAG Search Engine | FAISS vector search over ingested policy PDFs with bi-directional multilingual support |
-| 📝 Document Summarizer | Upload PDF or paste text; generates 3-point summary with follow-up Q&A mode |
-| 🕸️ Knowledge Graph | Interactive pyvis entity graph with NER — ORG, LAW, GPE, PERSON nodes |
-| 📊 Readability Analyzer | Flesch, Flesch-Kincaid, SMOG, Gunning Fog, Coleman-Liau + Plotly gauges |
-| 🌐 Multilingual Output | NLLB-200 translates AI responses into 7 Indian languages |
-| 👤 User Profile Dashboard | Avatar upload, email change (OTP-verified), password history, personalised settings |
-| ⭐ Feedback System | Per-section 5-star ratings + comments logged to SQLite |
-| 🕘 Activity History | Full timeline of all user interactions with section, input, and AI output |
-| ⚙️ Personalised Settings | Language preference, notifications, timestamps, results-per-page — all saved to DB |
+- 🔐 **Secure Authentication** – JWT-based login & registration  
+- 🔎 **RAG Search** – AI-powered semantic search using FAISS  
+- 📊 **Readability Analyzer** – Flesch, Gunning Fog, and SMOG metrics  
+- 🧠 **Document Summarization** – Transformer-based summarization  
+- 🌐 **Knowledge Graph** – Entity relationship visualization  
+- 🕘 **Query History** – Track previous searches & outputs  
+- 📈 **Dashboard** – Interactive analytics & insights  
 
-### 🛠️ Admin-Only Features
 
-- **User Management** — unlock, lock, promote to admin, demote, delete accounts
-- **Real-Time Activity Tracking** — full system-wide audit log with timeline UI
-- **Data Visualization** — feature popularity pie chart, language distribution bar chart, model utilization graphs
-- **Feedback Analysis** — star rating cards + WordCloud of user comments
-- **Data Export** — one-click CSV download of users, activity logs, and feedback
-- **Root Admin Protection** — root admin account cannot be locked, demoted, or deleted
+### 🛠 Admin-only Features
 
----
+- Secure admin access  
+- Upload and manage policy documents  
+- Monitor system usage  
+- View user activity and search logs  
+- Manage document indexing and vector store  
 
-## 🧩 Architecture Overview
 
-> **Deployment Model:** Monolithic Streamlit Application hosted on Google Colab, tunnelled via ngrok
 
-**Data Flow:**
-```
-User → Streamlit UI → JWT Auth → NLP Engine → FAISS Vector Store → Qwen2.5 LLM → NLLB Translator → Response
-```
+## 🧩 Architecture
 
-| **Component** | **Role** |
-|---|---|
-| `config.py` | JWT settings, email credentials, admin config, security constants |
-| `db.py` | SQLite schema, CRUD for users, activity_log, feedback, user_settings |
-| `auth.py` | bcrypt hashing, JWT encode/decode, OTP generation, email dispatch |
-| `vector_store.py` | PDF/HTML/TXT ingestion, FAISS indexing, semantic search with deduplication |
-| `nlp_engine.py` | Qwen2.5 LLM inference, NLLB-200 translation, RAG pipeline, summarization |
-| `knowledge_graph.py` | spaCy NER, NetworkX graph construction, pyvis interactive HTML export |
-| `readability.py` | textstat wrapper — 5 readability metrics + derived stats |
-| `profile_page.py` | User dashboard — avatar, email change (OTP), password, settings tabs |
-| `app.py` | Streamlit router, all page tabs, sidebar, admin dashboard, session state |
+Monolithic AI system integrating NLP pipelines, vector search, and visualization tools.
+## 🧩 Architecture Diagram
 
----
+<p align="center">
+  <img src="images/architecture.png" width="900"/>
+  <br/>
+  <em>Figure: End-to-end system architecture of PolicyNav</em>
+</p>
 
-## 🛠️ Tech Stack
 
-| **Layer** | **Technology** |
-|---|---|
-| Frontend | Streamlit + streamlit-option-menu |
-| Backend / Logic | Python 3.10+ |
-| AI / NLP | Hugging Face Transformers, sentence-transformers, spaCy |
-| Vector Search | FAISS (faiss-cpu) |
-| Database | SQLite (via Python sqlite3) |
-| Security | JWT (PyJWT), bcrypt, OTP over Gmail SMTP |
-| Visualization | Plotly, pyvis, matplotlib, WordCloud |
-| Deployment | Google Colab + Google Drive + ngrok |
-| PDF Parsing | PyPDF2, BeautifulSoup4 |
-| Readability | textstat |
 
----
+## 🗄 Database Schema
 
-## 🤖 AI Models Used
+<p align="center">
+  <img src="images/database_schema.png" width="900"/>
+  <br/>
+  <em>Figure: Entity Relationship Diagram (ERD) of the system database</em>
+</p>
 
-| **Model** | **Purpose** | **Framework** |
-|---|---|---|
-| Qwen2.5-1.5B-Instruct | Primary LLM for RAG Q&A, summarization, document Q&A | 🤗 Transformers |
-| NLLB-200 Distilled 600M | Multilingual translation — 7 Indian languages + English | 🤗 Transformers |
-| paraphrase-multilingual-MiniLM-L12-v2 | Sentence embeddings for FAISS semantic search | sentence-transformers |
-| en_core_web_sm | Named Entity Recognition — ORG, LAW, GPE, PERSON | spaCy |
-| textstat metrics | Readability scoring — 5 industry-standard formulas | textstat |
 
-> 💡 **Note:** Qwen2.5 runs in `float16` mode (no quantization required for 1.5B). NLLB-200 uses 2-beam search for speed. All models are loaded once and cached globally via Streamlit's `@st.cache_resource`.
 
----
+## 🛠 Tech Stack
 
-## 📂 Project Structure
+- 🎨 **Frontend:** Streamlit  
+- ⚙️ **Backend:** Python  
+- 🤖 **NLP Models:** Hugging Face Transformers  
+- 🔍 **Vector Search:** FAISS  
+- 🗄️ **Database:** SQLite  
+- 🔐 **Security:** JWT, bcrypt  
+- 📊 **Visualization:** Plotly, PyVis  
+- 🧠 **NLP:** spaCy  
 
-```
-PolicyNav/
-├── milestone_4.ipynb         # Main Colab notebook (all cells)
-│
-├── app.py                    # Streamlit app router & all page tabs
-├── config.py                 # JWT, email, admin constants
-├── db.py                     # SQLite schema & all DB operations
-├── auth.py                   # Auth helpers: hash, JWT, OTP, email
-├── readability.py            # Readability metrics wrapper
-├── vector_store.py           # FAISS ingestion & semantic search
-├── nlp_engine.py             # Qwen LLM + NLLB translator pipeline
-├── knowledge_graph.py        # spaCy NER + NetworkX + pyvis graph
-├── profile_page.py           # User Profile Dashboard (Milestone 4)
-│
-└── [Google Drive: /PolicyNav/]
-    ├── documents/            # Upload policy PDFs here
-    ├── graphs/               # Generated knowledge graph HTML
-    ├── faiss_index.bin       # FAISS vector index
-    ├── faiss_meta.pkl        # Document chunk metadata
-    └── policynav_users.db    # SQLite database
-```
 
----
+## 🤖 Models Used
 
+| Model / Tool | Purpose | Framework |
+|-------------|--------|----------|
+| Sentence Transformers | Text embeddings for semantic search | 🤗 Transformers |
+| FAISS | Vector similarity search (RAG retrieval) | Facebook AI |
+| Qwen2.5 | Answer generation (LLM) | Transformers |
+| spaCy | Named Entity Recognition | spaCy |
+| TextStat | Readability scoring | Python |
+
+| Model / Tool | One-line Description |
+|-------------|--------------------|
+| Sentence Transformers | Converts text into dense vector embeddings for semantic understanding |
+| FAISS | Performs fast similarity search on vector embeddings for retrieval |
+| Qwen2.5 | Generates context-aware answers using large language modeling |
+| spaCy | Extracts named entities and linguistic features from text |
+| TextStat | Calculates readability scores to evaluate text complexity |
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
+- Python 3.10+
+- Git  
+- (Optional) GPU support  
 
-- Google account with Google Colab and Google Drive access
-- ngrok account — free tier is sufficient (grab your `NGROK_AUTHTOKEN`)
-- Gmail account with **App Password** enabled (for OTP emails)
 
-### Step 1 — Add Colab Secrets
 
-In Google Colab, open the **Secrets panel** (🔑 icon on the left sidebar) and add:
+### 🧑‍💻 Local Setup
 
-| **Secret Key** | **Value** |
-|---|---|
-| `JWT_SECRET_KEY` | Any strong random string |
+```bash
+git clone <repository-link>
+cd PolicyNav
+pip install -r requirements.txt
+```
+## 🔐 Configuration & Environment Setup
+
+To securely run the application (especially in Google Colab), you need to configure environment variables using **Ngrok** and **Gmail App Passwords**.
+
+
+
+### 🌐 Ngrok Setup (for Public URL)
+
+Ngrok is used to expose your Streamlit app running in Colab to the internet.
+
+#### Steps to Get Ngrok Auth Token:
+
+1. Visit: https://ngrok.com/  
+2. Create a free account and log in  
+3. Go to the **Dashboard**  
+4. Copy your **Authtoken**
+
+
+
+### 🔑 Add Ngrok Secret in Google Colab
+
+1. Open your notebook in **Google Colab**  
+2. Click the **🔐 Secrets (key icon)** in the left sidebar  
+3. Click **“Add new secret”**  
+4. Enter:
+
+| Key | Value |
+|--||
+| `NGROK_AUTH_TOKEN` | Your copied ngrok token |
+
+5. Save and enable access
+
+
+
+### 📧 Gmail App Password Setup
+
+Used for sending emails (OTP, verification, alerts).
+
+#### Steps to Generate App Password:
+
+1. Go to **Google Account → Security**  
+2. Enable **2-Step Verification** (required)  
+3. Search for **App Passwords**  
+4. Select app type (e.g., *Mail*)  
+5. Generate password  
+6. Copy the **16-digit password immediately**
+
+⚠️ Important:
+- Do NOT use your normal Gmail password  
+- You cannot view this password again after closing  
+
+
+
+### 🔑 Add Gmail Secrets in Colab
+
+Add the following secrets:
+
+| Key | Value |
+|--||
 | `EMAIL_ID` | Your Gmail address |
-| `EMAIL_APP_PASSWORD` | Gmail App Password (not your login password) |
-| `ADMIN_EMAIL_ID` | Email address for the root admin account |
-| `ADMIN_PASSWORD` | Password for the root admin account |
-| `NGROK_AUTHTOKEN` | From your ngrok dashboard |
+| `EMAIL_APP_PASSWORD` | 16-digit app password |
 
-### Step 2 — Run Cells in Order
 
-| **Cell** | **Action** |
+
+### 📦 Final Environment Variables
+
+Your configuration should include:
+
+```env
+NGROK_AUTH_TOKEN=your_ngrok_token
+JWT_SECRET_KEY=your_secret_key
+EMAIL_ID=your_email@gmail.com
+EMAIL_APP_PASSWORD=your_app_password
+```
+## 🌐 Multilingual Support
+
+PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-quality, bi-directional translation. Your question is first translated to English for FAISS search, then the AI answer is translated back to your chosen language.
+
+| **Language** | **NLLB-200 Code** |
 |---|---|
-| Cell 1 | Install all dependencies (pip + spaCy model download) |
-| Cell 2 | Mount Google Drive and create APP_DIR folders |
-| Cell 3–5 | Write `config.py`, `db.py`, `auth.py` |
-| Cell 6–9 | Write `readability.py`, `vector_store.py`, `knowledge_graph.py`, `nlp_engine.py` |
-| Cell 10 | Write `profile_page.py` (Milestone 4 User Dashboard) |
-| Cell 11 | Write `app.py` (main Streamlit application) |
-| Cell 12 | Load secrets into environment variables |
-| Cell 13 | *(Optional)* Ingest policy PDFs into FAISS |
-| Cell 14 | 🚀 Launch app via ngrok — copy the public URL |
-
-### Step 3 — Upload Policy Documents
-
-Place your policy PDFs, HTML files, or TXT files into:
-
-```
-/PolicyNav/documents/   (on your Google Drive)
-```
-
-Then run **Cell 13** to ingest them into the FAISS vector store. New files are detected automatically — already-ingested files are skipped.
-
----
+| English | `eng_Latn` |
+| Hindi | `hin_Deva` |
+| Tamil | `tam_Taml` |
+| Telugu | `tel_Telu` |
+| Kannada | `kan_Knda` |
+| Marathi | `mar_Deva` |
+| Bengali | `ben_Beng` |
 
 ## 📝 Usage Guide
 
@@ -234,97 +257,76 @@ Then run **Cell 13** to ingest them into the FAISS vector store. New files are d
 
 7️⃣ **Profile** — Manage your avatar, change email (OTP-verified), update password (with history check), and configure app settings.
 
-8️⃣ **Feedback** — Submit a 5-star rating and optional comment after using any feature.
+8️⃣ **Feedback** — Submit a 5-star rating and optional comment after using any feature. 
 
----
+📌 *Screenshots included below 👇*
 
-## 🛡️ Admin Dashboard
 
-Login with admin credentials to access:
+## 📊 Datasets & Evaluation
 
-- 👥 **User Control** — view all users, lock/unlock accounts, promote/demote admins, delete users
-- 📜 **Activity Tracking** — real-time system-wide audit log
-- 📈 **Data Visualization** — feature popularity, language usage, and model utilization charts
-- 💬 **Feedback Analysis** — ratings, comments, and WordCloud visualization
-- 📥 **Data Export** — download Users, Activity Logs, and Feedback as CSV files
+### 📁 Datasets Used
 
----
+| Dataset | Usage |
+|--------|------|
+| Policy Documents (Custom) | RAG search corpus |
+| Government Reports | Real-world testing |
+| Web Scraped Docs | Knowledge graph generation |
 
-## 🌐 Multilingual Support
 
-PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-quality, bi-directional translation. Your question is first translated to English for FAISS search, then the AI answer is translated back to your chosen language.
+### 📈 Evaluation Metrics
 
-| **Language** | **NLLB-200 Code** |
-|---|---|
-| English | `eng_Latn` |
-| Hindi | `hin_Deva` |
-| Tamil | `tam_Taml` |
-| Telugu | `tel_Telu` |
-| Kannada | `kan_Knda` |
-| Marathi | `mar_Deva` |
-| Bengali | `ben_Beng` |
+- Semantic relevance (**RAG accuracy**)  
+- Response quality (**LLM output**)  
+- Readability score improvements  
+- Knowledge graph completeness  
 
----
 
 ## 📸 Screenshots
 
-> *(To be updated with real UI images)*
+### 📊 Dashboard
+![Dashboard](images/dashboard.png)
 
-- Login & Registration Page
-- User Dashboard with Activity Stats
-- RAG Search Chat Interface (multilingual)
-- Document Summarizer with Q&A Mode
-- Interactive Knowledge Graph Explorer
-- Readability Analyzer with Plotly Gauges
-- User Profile — Avatar, Email, Password, Settings Tabs
-- Admin Dashboard — User Control & Analytics
 
----
 
-## 🗺️ Roadmap
+### 🔎 RAG Search
+![RAG Search](images/rag_search.png)
 
-### ✅ Completed (Milestone 4)
 
-- [x] Full Streamlit application with JWT auth and admin dashboard
-- [x] FAISS-based RAG pipeline with Qwen2.5-1.5B-Instruct
-- [x] NLLB-200 multilingual translation (7 languages)
-- [x] Interactive Knowledge Graph with pyvis
-- [x] User Profile Dashboard — avatar, email change, settings
-- [x] Activity history, feedback system, CSV data export
 
-### 🔜 Planned
+### 🌐 Knowledge Graph
+![Knowledge Graph](images/knowledge_graph.png)
 
-- [ ] Fine-tuned policy-domain LLM on Indian governance datasets
-- [ ] Speech-to-text input for accessibility
-- [ ] WhatsApp / Telegram bot interface for rural citizen access
-- [ ] Docker containerization for local deployment
-- [ ] Expanded language support (Gujarati, Punjabi, Odia, Urdu)
-- [ ] Policy comparison mode — side-by-side diff across documents
 
----
 
+### 🕘 History
+![History](images/history.png)
+
+
+
+### 🛠 Admin Panel
+![Admin](images/admin.png)
+
+
+
+### 🧠 Summarization
+![Summarization](images/summarization.png)
+
+
+
+## Mentor
+Mohammad Sipli M
 ## 👥 Team
 
-| **Name** | **Role** | **Responsibilities** |
-|---|---|---|
-| Add Name | ML / NLP Engineer | Qwen LLM integration, NLLB translation, RAG pipeline, FAISS |
-| Add Name | Backend Developer | JWT auth, SQLite DB, admin dashboard, activity logging |
-| Add Name | Frontend Developer | Streamlit UI, Plotly charts, knowledge graph, readability tab |
-| Add Name | Full Stack / Profile | Profile dashboard, settings, avatar, email OTP, Milestone 4 |
-| Add Name | Documentation | README, project report, presentation, deployment guide |
+| Name | Role | Responsibilities |
+|-----|-----|----------------|
+| Add Name | ML Engineer | RAG pipeline, embeddings, evaluation |
+| Add Name | Backend Developer | Authentication, database |
+| Add Name | Frontend Developer | Streamlit UI |
+| Add Name | Documentation | README, report |
 
----
+
 
 ## 📜 License
 
-🆓 **MIT License** — Free to use, modify, and distribute with attribution. See the [LICENSE](LICENSE) file for full terms.
-
----
-
-<div align="center">
-
-Built with ❤️ as part of the **Infosys Springboard — PolicyNav Specialization**
-
-*Applying AI to governance, public affairs, and policy intelligence.*
-
-</div>
+🆓 **MIT License**  
+Free to use, modify, and distribute with attribution.
