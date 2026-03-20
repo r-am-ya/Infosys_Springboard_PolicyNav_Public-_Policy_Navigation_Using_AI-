@@ -1,332 +1,324 @@
-# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI- 
-# 🧠 PolicyNav
-AI-Powered Policy Document Analysis & Navigation System  
-Transforming complex policy documents into actionable insights using AI.
-##Quick Links
+# PolicyNav – Intelligent Policy & Document Navigation System
 
-| Category          | Link                                 |
-| ----------------- | ------------------------------------ |
-| 📽️ Demo Video    | [Video Link](https://drive.google.com/file/d/1mbPmmrhLD5Z8etwEr7z8v-OQ9IUnaCUi/view?usp=sharing)                        |
-| 🧩 Source Code    | This Repository                      |
-| 🧠 AI Models      | Qwen · Sentence Transformers · FAISS |
+PolicyNav is an **AI-powered document understanding and policy navigation platform** that allows users to search, analyze, and interact with complex policy documents using **Retrieval-Augmented Generation (RAG)** and modern Natural Language Processing techniques.
 
-## 📌 Table of Contents
+The system combines **semantic search, AI-based question answering, analytics dashboards, and user management tools** to provide an intelligent environment for document exploration.
 
-- About the Project  
-- Problem Statement & Motivation  
-- Key Features  
-- Architecture  
-- Tech Stack  
-- Models Used  
-- Project Structure  
-- Installation & Setup  
-- Usage Guide  
-- Admin Controls  
-- Datasets & Evaluation  
-- Screenshots  
-- Roadmap  
-- Team  
-- License  
 
 
+# System Overview
 
-## 📖 About the Project
+PolicyNav integrates multiple technologies into a single platform:
 
-**PolicyNav** is an AI-powered system designed to simplify the exploration and understanding of complex policy documents using modern NLP techniques and Retrieval-Augmented Generation (RAG).
+- AI-powered **document search**
+- **RAG-based question answering**
+- **User and Admin dashboards**
+- **Interactive data visualization**
+- **Feedback analysis**
+- **Profile personalization**
 
-It enables users to:
-- Search across large document collections intelligently  
-- Generate contextual answers using AI  
-- Visualize relationships via knowledge graphs  
-- Summarize lengthy documents  
-- Analyze readability of content  
+The application is built primarily using **Streamlit, Transformers, Sentence Transformers, FAISS, and SQLite**.
 
-📌 Built as part of **Infosys Springboard Internship Final Project**  
-📌 Target users: Common persons, Researchers, policy analysts, students, government professionals  
 
+ 
 
+# Admin Dashboard (Management & Analytics)
 
-## 🎯 Problem Statement & Motivation
+The **Admin Dashboard** functions as the **central command center** for monitoring and managing the entire system.
 
-## 📄 Problem & Solution
+## User Control
 
-**Problem:**  
-Policy documents are often lengthy and difficult to navigate, written in complex language, and time-consuming to analyze manually.
+Admins can manage all registered users with the following actions:
 
-**Solution:**  
-Our AI-powered system helps to:
-- Extract meaningful insights instantly  
-- Enable semantic search across documents  
-- Visualize relationships between entities  
-- Simplify and summarize complex content
+- Promote normal users to **Admin**
+- **Lock / Unlock user accounts**
+- **Delete user accounts**
+- Monitor user activity
 
+This ensures proper **role-based access control and security**.
 
+ 
 
-## 🚀 Key Features
+## Activity Tracking
 
-## 👤 User Features
+The admin panel allows administrators to track:
 
-- 🔐 **Secure Authentication** – JWT-based login & registration  
-- 🔎 **RAG Search** – AI-powered semantic search using FAISS  
-- 📊 **Readability Analyzer** – Flesch, Gunning Fog, and SMOG metrics  
-- 🧠 **Document Summarization** – Transformer-based summarization  
-- 🌐 **Knowledge Graph** – Entity relationship visualization  
-- 🕘 **Query History** – Track previous searches & outputs  
-- 📈 **Dashboard** – Interactive analytics & insights  
+- Currently active users
+- Historical login activity
+- System usage logs
+- User interaction history
 
+This provides visibility into **system behavior and engagement**.
 
-### 🛠 Admin-only Features
+ 
 
-- Secure admin access  
-- Upload and manage policy documents  
-- Monitor system usage  
-- View user activity and search logs  
-- Manage document indexing and vector store  
+## Data Visualization
 
+The admin dashboard includes **interactive charts and graphs** to analyze system usage.
 
+Admins can view insights about:
 
-## 🧩 Architecture
+### Model Usage
+Shows which AI models are used most frequently.
 
-Monolithic AI system integrating NLP pipelines, vector search, and visualization tools.
-## 🧩 Architecture Diagram
+### Language Usage
+Displays languages being used by users when interacting with the system.
 
-<p align="center">
-  <img src="architecture.png" width="900"/>
-  <br/>
-  <em>Figure: End-to-end system architecture of PolicyNav</em>
-</p>
+### Feature Usage
+Tracks the most frequently used platform features such as:
 
+- RAG search
+- Readability analysis
+- Document analysis
+- Dashboard features
 
+These insights help administrators understand **system adoption patterns**.
 
-## 🗄 Database Schema
+ 
 
-<p align="center">
-  <img src="database_schema.png" width="900"/>
-  <br/>
-  <em>Figure: Entity Relationship Diagram (ERD) of the system database</em>
-</p>
+## Feedback Analysis
 
+User feedback is analyzed using a **WordCloud visualization**.
 
+This allows admins to quickly identify:
 
-## 🛠 Tech Stack
+- Frequently mentioned keywords
+- User concerns
+- Popular feature requests
 
-- 🎨 **Frontend:** Streamlit  
-- ⚙️ **Backend:** Python  
-- 🤖 **NLP Models:** Hugging Face Transformers  
-- 🔍 **Vector Search:** FAISS  
-- 🗄️ **Database:** SQLite  
-- 🔐 **Security:** JWT, bcrypt  
-- 📊 **Visualization:** Plotly, PyVis  
-- 🧠 **NLP:** spaCy  
+The visual representation highlights the **most dominant topics** mentioned by users.
 
+ 
 
-## 🤖 Models Used
+## Data Export
 
-| Model / Tool | Purpose | Framework |
-|-------------|--------|----------|
-| Sentence Transformers | Text embeddings for semantic search | 🤗 Transformers |
-| FAISS | Vector similarity search (RAG retrieval) | Facebook AI |
-| Qwen2.5 | Answer generation (LLM) | Transformers |
-| spaCy | Named Entity Recognition | spaCy |
-| TextStat | Readability scoring | Python |
+Admins can export system data for reporting and analysis.
 
-| Model / Tool | One-line Description |
-|-------------|--------------------|
-| Sentence Transformers | Converts text into dense vector embeddings for semantic understanding |
-| FAISS | Performs fast similarity search on vector embeddings for retrieval |
-| Qwen2.5 | Generates context-aware answers using large language modeling |
-| spaCy | Extracts named entities and linguistic features from text |
-| TextStat | Calculates readability scores to evaluate text complexity |
-## ⚙️ Installation & Setup
+Exportable data includes:
 
-### Prerequisites
-- Python 3.10+
-- Git  
-- (Optional) GPU support  
+- User information
+- Feedback data
+- Query history
+- System logs
 
+This feature supports **administrative reporting and auditing**.
 
+ 
 
-### 🧑‍💻 Local Setup
+# User Dashboard & Profile Personalization
 
-```bash
-git clone <repository-link>
-cd PolicyNav
-pip install -r requirements.txt
-```
-## 🔐 Configuration & Environment Setup
+The **User Dashboard** provides a personalized and secure experience for users interacting with the platform.
 
-To securely run the application (especially in Google Colab), you need to configure environment variables using **Ngrok** and **Gmail App Passwords**.
+ 
 
+## Security Features
 
+Users can manage their account security by:
 
-### 🌐 Ngrok Setup (for Public URL)
+- Updating their **email address**
+- Changing their **password**
 
-Ngrok is used to expose your Streamlit app running in Colab to the internet.
+The system includes security mechanisms such as:
 
-#### Steps to Get Ngrok Auth Token:
+- JWT-based authentication
+- Password hashing
+- Login attempt restrictions
+- Account lock protection
 
-1. Visit: https://ngrok.com/  
-2. Create a free account and log in  
-3. Go to the **Dashboard**  
-4. Copy your **Authtoken**
+ 
 
+## Profile Personalization
 
+Users can personalize their profile with:
 
-### 🔑 Add Ngrok Secret in Google Colab
+- **Avatar / Display Picture upload**
+- Profile updates
+- Account settings
 
-1. Open your notebook in **Google Colab**  
-2. Click the **🔐 Secrets (key icon)** in the left sidebar  
-3. Click **“Add new secret”**  
-4. Enter:
+This helps create a **customized user experience**.
 
-| Key | Value |
-|--||
-| `NGROK_AUTH_TOKEN` | Your copied ngrok token |
+ 
 
-5. Save and enable access
+## UI / UX Enhancements
 
+The interface is designed to improve usability and navigation.
 
+Features include:
 
-### 📧 Gmail App Password Setup
+- Clean dashboard layout
+- Interactive data visualizations
+- Fast document search
+- Clear result displays
 
-Used for sending emails (OTP, verification, alerts).
+The goal is to provide a **smooth and intuitive user workflow**.
 
-#### Steps to Generate App Password:
+ 
 
-1. Go to **Google Account → Security**  
-2. Enable **2-Step Verification** (required)  
-3. Search for **App Passwords**  
-4. Select app type (e.g., *Mail*)  
-5. Generate password  
-6. Copy the **16-digit password immediately**
+# Retrieval-Augmented Generation (RAG)
 
-⚠️ Important:
-- Do NOT use your normal Gmail password  
-- You cannot view this password again after closing  
+The platform uses a **Retrieval-Augmented Generation (RAG)** architecture for intelligent document search and question answering.
 
+RAG combines:
 
+- **Document retrieval**
+- **Language model generation**
 
-### 🔑 Add Gmail Secrets in Colab
+to provide context-aware responses.
 
-Add the following secrets:
+ 
 
-| Key | Value |
-|--||
-| `EMAIL_ID` | Your Gmail address |
-| `EMAIL_APP_PASSWORD` | 16-digit app password |
+# Document Processing Pipeline
 
+1. Documents are uploaded or stored in the system.
+2. Text is extracted from documents.
+3. The text is divided into **smaller chunks**.
+4. Each chunk is converted into **vector embeddings**.
+5. The embeddings are stored in a **vector index**.
 
+When a user asks a question:
 
-### 📦 Final Environment Variables
+1. The query is converted into an embedding.
+2. The system retrieves the **most relevant document chunks**.
+3. The retrieved context is passed to a **language model**.
+4. The model generates the final answer.
+ 
 
-Your configuration should include:
+# Vector Database
 
-```env
-NGROK_AUTH_TOKEN=your_ngrok_token
-JWT_SECRET_KEY=your_secret_key
-EMAIL_ID=your_email@gmail.com
-EMAIL_APP_PASSWORD=your_app_password
-```
-## 🌐 Multilingual Support
+The system uses **FAISS (Facebook AI Similarity Search)** for vector indexing.
 
-PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-quality, bi-directional translation. Your question is first translated to English for FAISS search, then the AI answer is translated back to your chosen language.
+FAISS enables:
 
-| **Language** | **NLLB-200 Code** |
-|---|---|
-| English | `eng_Latn` |
-| Hindi | `hin_Deva` |
-| Tamil | `tam_Taml` |
-| Telugu | `tel_Telu` |
-| Kannada | `kan_Knda` |
-| Marathi | `mar_Deva` |
-| Bengali | `ben_Beng` |
+- Fast similarity search
+- Efficient vector retrieval
+- Scalable semantic search
 
-## 📝 Usage Guide
+This allows the system to retrieve relevant document sections quickly.
 
-1️⃣ **Register / Login** — Create an account with email, username, and a strong password (min. 8 chars, uppercase + number required)
+ 
 
-2️⃣ **Select a Feature** from the sidebar — RAG Search, Summarization, Knowledge Graph, Readability Analyzer, or History
 
-3️⃣ **RAG Search** — Type your policy question in any supported language. Choose output language and optionally enable **Simplify Jargon** mode. The AI searches the vector DB and translates the answer back.
 
-4️⃣ **Summarizer** — Upload a policy PDF or paste text, select output language, and get a 3-bullet summary. Use the Q&A box to ask follow-up questions from the same document.
+ 
 
-5️⃣ **Knowledge Graph** — Click **Render Interactive Topology** to generate a live force-directed entity graph from all ingested documents. Hover nodes for details.
+# NLP & Text Analysis Features
 
-6️⃣ **Readability Analyzer** — Enter text or upload a PDF/TXT. View 5 readability gauges, grade level classification (Beginner / Intermediate / Advanced / Expert), and detailed text statistics.
+The system also provides additional Natural Language Processing capabilities.
 
-7️⃣ **Profile** — Manage your avatar, change email (OTP-verified), update password (with history check), and configure app settings.
+ 
 
-8️⃣ **Feedback** — Submit a 5-star rating and optional comment after using any feature. 
+## Readability Analysis
 
-📌 *Screenshots included below 👇*
+Using the **TextStat** library, the system calculates readability metrics such as:
 
+- Flesch Reading Ease
+- Reading Grade Level
+- Sentence complexity
+- Word difficulty
 
-## 📊 Datasets & Evaluation
+This helps users understand **how easy or difficult a document is to read**.
 
-### 📁 Datasets Used
+ 
 
-| Dataset | Usage |
-|--------|------|
-| Policy Documents (Custom) | RAG search corpus |
-| Government Reports | Real-world testing |
-| Web Scraped Docs | Knowledge graph generation |
+## Linguistic Analysis
 
+Using **SpaCy**, the system performs:
 
-### 📈 Evaluation Metrics
+- Named Entity Recognition
+- Tokenization
+- Dependency Parsing
 
-- Semantic relevance (**RAG accuracy**)  
-- Response quality (**LLM output**)  
-- Readability score improvements  
-- Knowledge graph completeness  
+This enables deeper **text structure analysis**.
 
+ 
 
-## 📸 Screenshots
+# Technology Stack
 
-### 📊 Dashboard
-![Dashboard](dashboard.png)
+## Frontend
 
+- Streamlit
+- Streamlit Option Menu
+- Plotly
+- PyVis
 
 
-### 🔎 RAG Search
-![RAG Search](rag_search.png)
+## Backend
 
+- Python
+- JWT Authentication
+- Bcrypt password hashing
+- SQLite Database
 
 
-### 🌐 Knowledge Graph
-![Knowledge Graph](knowledge_graph.png)
+## Visualization
 
+- Plotly
+- WordCloud
+- Matplotlib
 
+ 
 
-### 🕘 History
-![History](history.png)
+# Database
 
+The platform uses **SQLite** for storing system data.
 
+Stored information includes:
 
-### 🛠 Admin Panel
-![Admin](admin.png)
+- User accounts
+- Login history
+- Feedback
+- Query logs
+- System activity
 
 
+ 
 
-### 🧠 Summarization
-![Summarization](summarization.png)
+# Installation
 
+Install dependencies:
 
 
-## Mentor
-Mohammad Sipli M
-## 👥 Team
+Run the application Cell by cell
 
-| Name | Role | Responsibilities |
-|-----|-----|----------------|
-| Add Name | ML Engineer | RAG pipeline, embeddings, evaluation |
-| Add Name | Backend Developer | Authentication, database |
-| Add Name | Frontend Developer | Streamlit UI |
-| Add Name | Documentation | README, report |
 
 
 
-## 📜 License
+# Screenshots
 
-🆓 **MIT License**  
-Free to use, modify, and distribute with attribution.
+## User Profile Page
+![User Profile](images/My_Profile.png)
+
+![User Profile](images/avatar.png)
+![User Profile](images/change_email.png)
+![User Profile](images/ChangePassword.png)
+
+
+## Admin Dashboard
+
+![Admin Dashboard](images/admin_dashboard.png)
+
+## Feedback Analysis
+![Admin Dashboard](images/Feedback_analysis1.png)
+![Admin Dashboard](images/Feedback_analysis2.png)
+
+##Activity Tracking
+
+![Admin Dashboard](images/Activittracking.png)
+
+## Analytics Charts
+
+![Analytics](images/analytics1.png)
+![Analytics](images/analytics2.png)
+
+#Data Export
+![Admin Dashboard](images/dataexport.png)
+
+
+# Authors 
+Velagada Devi Sri Prasad,
+Sanjay Janarthan,
+Aarthi Chandolkar,
+Ramya ,
+Savitha Yadav,
+Pooja K K
+
