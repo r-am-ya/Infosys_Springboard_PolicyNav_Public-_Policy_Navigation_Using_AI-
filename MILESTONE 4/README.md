@@ -91,7 +91,7 @@ Monolithic AI system integrating NLP pipelines, vector search, and visualization
 ## 🧩 Architecture Diagram
 
 <p align="center">
-  <img src="images/architecture.png" width="900"/>
+  <img src="architecture.png" width="900"/>
   <br/>
   <em>Figure: End-to-end system architecture of PolicyNav</em>
 </p>
@@ -101,7 +101,7 @@ Monolithic AI system integrating NLP pipelines, vector search, and visualization
 ## 🗄 Database Schema
 
 <p align="center">
-  <img src="images/database_schema.png" width="900"/>
+  <img src="database_schema.png" width="900"/>
   <br/>
   <em>Figure: Entity Relationship Diagram (ERD) of the system database</em>
 </p>
@@ -284,32 +284,32 @@ PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-
 ## 📸 Screenshots
 
 ### 📊 Dashboard
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 
 
 ### 🔎 RAG Search
-![RAG Search](images/rag_search.png)
+![RAG Search](rag_search.png)
 
 
 
 ### 🌐 Knowledge Graph
-![Knowledge Graph](images/knowledge_graph.png)
+![Knowledge Graph](knowledge_graph.png)
 
 
 
 ### 🕘 History
-![History](images/history.png)
+![History](history.png)
 
 
 
 ### 🛠 Admin Panel
-![Admin](images/admin.png)
+![Admin](admin.png)
 
 
 
 ### 🧠 Summarization
-![Summarization](images/summarization.png)
+![Summarization](summarization.png)
 
 
 
