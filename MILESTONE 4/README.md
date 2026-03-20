@@ -1,4 +1,4 @@
-# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI- Velagada Devi Sri Prasad
+# Infosys_Springboard_PolicyNav_Public-_Policy_Navigation_Using_AI- 
 # 🧠 PolicyNav
 AI-Powered Policy Document Analysis & Navigation System  
 Transforming complex policy documents into actionable insights using AI.
@@ -6,7 +6,7 @@ Transforming complex policy documents into actionable insights using AI.
 
 | Category          | Link                                 |
 | ----------------- | ------------------------------------ |
-| 📽️ Demo Video    | [Video Link](https://drive.google.com/file/d/1o0quoQmjCtUTDYM1k-SvOcfN0cxqjVTP/view?usp=sharing)                         |
+| 📽️ Demo Video    | [Video Link](https://drive.google.com/file/d/1mbPmmrhLD5Z8etwEr7z8v-OQ9IUnaCUi/view?usp=sharing)                        |
 | 🧩 Source Code    | This Repository                      |
 | 🧠 AI Models      | Qwen · Sentence Transformers · FAISS |
 
