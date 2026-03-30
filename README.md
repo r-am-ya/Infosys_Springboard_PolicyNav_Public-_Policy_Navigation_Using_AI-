@@ -326,15 +326,6 @@ PolicyNav uses Facebook's **NLLB-200** (No Language Left Behind) model for high-
 
 ## Mentor
 Mohammad Sipli M
-## 👥 Team
-
-| Name | Role | Responsibilities |
-|-----|-----|----------------|
-| Add Name | ML Engineer | RAG pipeline, embeddings, evaluation |
-| Add Name | Backend Developer | Authentication, database |
-| Add Name | Frontend Developer | Streamlit UI |
-| Add Name | Documentation | README, report |
-
 
 
 ## 📜 License
